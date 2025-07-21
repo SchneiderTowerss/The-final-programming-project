@@ -33,4 +33,4 @@ El código aplica programación orientada a objetos para modelar el comportamien
 - Los vuelos generados y su asignación
 - Estado final de los aeropuertos después de cada intervalo
 
-//Proyecto desarrollado como práctica final de Programación Orientada a Objetos
+Proyecto desarrollado como práctica final de Programación Orientada a Objetos
