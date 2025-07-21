@@ -50,13 +50,13 @@ El código aplica programación orientada a objetos para modelar el comportamien
  JMC Estado: 750 vuelos
  EOH Estado: 11 vuelos
 
-# --- Comentario ---
-#EOH cerrado por mal clima, todos los vuelos fueron redirigidos al JMC.
-#Los vuelos militares, comerciales y emergencias se asignan según condiciones.
-#Al final se muestra el total acumulado en cada aeropuerto.
+>**Comentario**
+EOH cerrado por mal clima, todos los vuelos fueron redirigidos al JMC.
+Los vuelos militares, comerciales y emergencias se asignan según condiciones.
+Al final se muestra el total acumulado en cada aeropuerto.<
 ```
 ## Control de Iteraciones  
 Al final del código, se usa un ciclo **`for`** para ejecutar la simulación un número definido de iteraciones.  
 Cada iteración **equivale a 30 minutos simulados**.  
-> **Si se desea cambiar la duración total de la simulación, se debe modificar el número de iteraciones.** 
+> **Si se desea cambiar la duración total de la simulación, se debe modificar el número de iteraciones.** <
 ***Proyecto desarrollado como práctica final de Programación Orientada a Objetos***
