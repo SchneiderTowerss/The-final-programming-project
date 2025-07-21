@@ -32,5 +32,27 @@ El código aplica programación orientada a objetos para modelar el comportamien
 - El clima de cada aeropuerto
 - Los vuelos generados y su asignación
 - Estado final de los aeropuertos después de cada intervalo
+```plaintext
+ --- Ejemplo de Salida de la Simulación ---
+
+ Iteración 38/45
+ Hora: 2025-07-21 18:30
+ JMC Clima: Despejado
+ EOH Clima: Lluvia
+ EOH está CERRADO
+
+ Generando 23 vuelos para este intervalo...
+ Asignado N-1993AV - Avianca (Airbus A319) - Pasajeros: 134 - Emergencia: 0 a JMC
+ Asignado HK-7657 - Sarpa (Jetstream 32) - Pasajeros: 9 - Emergencia: 0 a JMC
+ ...
+ Asignado CC-JVK - JetSmart (Airbus A320) - Pasajeros: 157 - Emergencia: 0 a JMC
+
+ JMC Estado: 750 vuelos
+ EOH Estado: 11 vuelos
+
+# --- Comentario ---
+EOH cerrado por mal clima, todos los vuelos fueron redirigidos al JMC.
+Los vuelos militares, comerciales y emergencias se asignan según condiciones.
+Al final se muestra el total acumulado en cada aeropuerto.
 
 Proyecto desarrollado como práctica final de Programación Orientada a Objetos
