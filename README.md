@@ -1,30 +1,29 @@
-Asigna los vuelos según las condiciones del momento
+# Simulador de Asignación de Vuelos — JMC y EOH
+# Autores: Santiago Flórez Roldán — Schneider Alejandro Torres Ortega
 
-Muestra el estado de los aeropuertos cada media hora de simulación
+# Descripción
+# Este proyecto simula la asignación de vuelos hacia el Aeropuerto José María Córdova (JMC) 
+# y el Aeropuerto Olaya Herrera (EOH), considerando:
+# - Tipo de avión (comercial o militar)
+# - Condiciones climáticas aleatorias
+# - Emergencias simuladas
+# - Horarios y restricciones de operación de cada aeropuerto
 
-Lógica de la Simulación
-JMC (Rionegro): abierto 24/7 — acepta vuelos internacionales — capacidad: 35 vuelos
+# El código aplica programación orientada a objetos para modelar el comportamiento de las aeronaves 
+# y la gestión aeroportuaria.
 
-EOH (Medellín): abierto de 6:00 a 18:00 — solo nacionales y aviones pequeños — capacidad: 15 vuelos
+# ¿Qué hace el programa?
+# - Genera aviones comerciales y militares con matrículas según el operador
+# - Simula eventos meteorológicos como niebla, lluvia y tormenta
+# - Gestiona emergencias con baja probabilidad
+# - Asigna los vuelos al aeropuerto más adecuado según las condiciones
+# - Controla el tráfico aéreo cada 30 minutos de simulación
 
-Las emergencias y el mal tiempo influyen en la asignación de los vuelos
+# Lógica de la Simulación
+# - JMC (Rionegro): abierto 24/7, acepta vuelos internacionales, capacidad 35 vuelos
+# - EOH (Medellín): abierto de 6:00 a 18:00, vuelos nacionales o militares, máximo 15 vuelos
+# - Emergencias y clima afectan la asignación de los vuelos en tiempo real
 
-Estructura del Código
-CondicionesClimaticas — Gestiona el clima
-
-Avion — Clase base para los aviones
-
-AvionComercial y AvionMilitar — Definen el comportamiento específico de cada tipo
-
-Aeropuerto — Controla vuelos asignados y clima
-
-DespachadorVuelos — Administra la simulación y la toma de decisiones
-
-Ejecución
-Solo corré el archivo Python para ver la simulación:
-
-bash
-Copy
-Edit
-python simulador.py
-Cada simulación genera vuelos, actualiza el clima y muestra las decisiones que toma el despachador.
+# Estructura del Código
+# - CondicionesClimaticas: gestiona el estado del clima por aeropuerto
+# - Avion (base), Av
