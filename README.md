@@ -1,40 +1,14 @@
-# Simulador de Asignación de Vuelos — JMC y EOH
-Autores: Santiago Flórez Roldán — Schneider Alejandro Torres Ortega
+ca (Opera en rionegro, matrícula N-XXXXAV, usa airbus a318, a319. a320. a321, b787 y para carga utiliza a330)
+LATAM (Opera en rionegro, matrícula CC-XXX con letras, usa airbus a320 y 767 de carga)
+JetSmart (opera en rionegro, matrícula CC-XXX con letras, usa airbus a320)
+Wingo (Opera en rionegro, matrícula HP-XXXX con números aleatorios, usa B737)
 
-# Descripción
- Este proyecto simula la asignación de vuelos hacia el Aeropuerto José María Córdova (JMC) y el Aeropuerto Olaya Herrera (EOH), considerando:
-- Tipo de avión (comercial o militar)
-- Condiciones climáticas aleatorias
-- Emergencias simuladas
-- Horarios y restricciones de operación de cada aeropuerto
+Mediante código para ver los aeropuertos e iteraciones por cada media hora durante un día, necesito que simules aeronaves que entran en emergencia (con 0.5% de probabilidad por día) mal clima meteorológico (15% de probabilidad en Medellín, 7% de probabilidad en Rionegro) 
 
-El código aplica programación orientada a objetos para modelar el comportamiento de las aeronaves y la gestión aeroportuaria.
+Y que el código redirija las aeronaves al aeropuerto más oportuno.
+Al aeropuerto de rionegro tiene aproximadamente 35 vuelos por hora al día (aterrizaje y despegue) y el olaya herrera aproximadamente 15 vuelos por hora.
+la proporción de aeronaves entre militares y comerciales es de 4% militares y 96% comerciales. (sin contar a satena)
 
-# ¿Qué hace el programa?
-- Genera aviones comerciales y militares con matrículas según el operador
-- Simula eventos meteorológicos como niebla, lluvia y tormenta
-- Gestiona emergencias con baja probabilidad
-- Asigna los vuelos al aeropuerto más adecuado según las condiciones
-- Controla el tráfico aéreo cada 30 minutos de simulación
+El código está hecho teniendo en cuenta la programación orientada a objetos, utilizando herencia para la clase Avion, y generar aeronaves comerciales y militares.
 
-# Lógica de la Simulación
-- JMC (Rionegro): abierto 24/7, acepta vuelos internacionales, capacidad 35 vuelos
-- EOH (Medellín): abierto de 6:00 a 18:00, vuelos nacionales o militares, máximo 15 vuelos
-- Emergencias y clima afectan la asignación de los vuelos en tiempo real
-
-# Estructura del Código
-- CondicionesClimaticas: gestiona el estado del clima por aeropuerto
-- Avion (base), AvionComercial, AvionMilitar: definen características y comportamiento de las aeronaves
-- Aeropuerto: administra los vuelos asignados y el estado operativo
-- DespachadorVuelos: centraliza la simulación, crea aviones, gestiona clima y toma decisiones
-
-# Ejecución
- Ejecutar el archivo para iniciar la simulación:
->>> python simulador.py
-# 
-# La simulación muestra:
-- El clima de cada aeropuerto
-- Los vuelos generados y su asignación
-- Estado final de los aeropuertos después de cada intervalo
-
-Proyecto desarrollado como práctica final de Programación Orientada a Objetos
+Para el número de iteraciones, también se utilizó un ciclo for al final, donde cada iteración cuenta media hora.
