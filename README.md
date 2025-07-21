@@ -51,8 +51,8 @@ El código aplica programación orientada a objetos para modelar el comportamien
  EOH Estado: 11 vuelos
 
 # --- Comentario ---
-EOH cerrado por mal clima, todos los vuelos fueron redirigidos al JMC.
-Los vuelos militares, comerciales y emergencias se asignan según condiciones.
-Al final se muestra el total acumulado en cada aeropuerto.
-
+#EOH cerrado por mal clima, todos los vuelos fueron redirigidos al JMC.
+#Los vuelos militares, comerciales y emergencias se asignan según condiciones.
+#Al final se muestra el total acumulado en cada aeropuerto.
+```
 Proyecto desarrollado como práctica final de Programación Orientada a Objetos
