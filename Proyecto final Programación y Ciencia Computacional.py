@@ -173,7 +173,7 @@ class Aeropuerto:
         self._codigo = codigo
         self._aviones_asignados = []
         self._clima = 'Despejado'
-        self._capacidad = 35 if codigo == 'JMC' else 15  
+        self._capacidad = 35 if codigo == 'JMC' else 30  
     
     # Getters
     @property
